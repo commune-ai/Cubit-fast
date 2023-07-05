@@ -1,0 +1,29 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=59.0.0", "wheel==0.37.1", "Cython>=0.29.33", "numpy==1.21.6" ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cubit"
+version = "1.2.0"
+description = "A python package for CUDA registration on bittensor. "
+readme = "README.md"
+authors = [{ name = "Opentensor Foundation", email = "cameron@opentensor.ai" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["bittensor", "cuda", "register", "cubit"]
+dependencies = [
+    "setuptools>=59.0.0", "wheel==0.37.1", "Cython>=0.29.33", "numpy==1.21.6"
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+test = ["black", "pip-tools", "bittensor>=3.0.0", "pycryptodome==3.4.3" ]
+
+[project.urls]
+Homepage = "https://github.com/opentensor/cubit"

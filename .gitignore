@@ -1,0 +1,9 @@
+.vscode
+*.so
+build
+*.cpp
+*.egg-info
+/dist
+__pycache__
+
+try.py
