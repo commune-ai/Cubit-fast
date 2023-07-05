@@ -39,9 +39,7 @@ Enter dir
 ```
 cd cubit/
 ```
-```   
 Install as editable    
-```
 ```
 pip install -e .
 ```  
