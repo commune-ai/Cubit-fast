@@ -16,7 +16,6 @@ A python package to register on the bittensor network using a CUDA device.
     1. `sudo docker push opentensorfdn/bittensor:VERSION_BT-cubitVERSION_CUBIT`
 
 ## Install
-```
 ### From source
 #### Requirements   
 - [cuda-toolkit 11.3 or higher](https://developer.nvidia.com/cuda-downloads)
@@ -28,17 +27,21 @@ You can check if you have cuda-toolkit with
 ```
 nvcc --version
 ```  
-
-
+```
 Clone repo  
 ```
+```
 git clone https://github.com/GithubRealFan/cubit-fast.git
+```
 ```  
 Enter dir  
 ```
+```
 cd cubit/
+```
 ```   
 Install as editable    
+```
 ```
 pip install -e .
 ```  
@@ -56,7 +59,7 @@ pip install -e .[test]
 ```  
 
 ## Run cubit-fast
-```  
+
 You should upgrade update-interval on bittensor and could run easily using this bash:
 ```  
 btcli register --subtensor.network finney --netuid 'uid' --wallet.name 'your_cold_key' --wallet.hotkey 'your_hot_key' --cuda.TPB 512 --cuda.update_interval 400000 --cuda.dev_id 'your_cuda_id' --cuda.use_cuda  --logging.debug --no_prompt
@@ -67,9 +70,9 @@ For example :
 btcli register --subtensor.network finney --netuid 1 --wallet.name real --wallet.hotkey 8 --cuda.TPB 512 --cuda.update_interval 400000 --cuda.dev_id 0 1 2 3 4 5 6 7 --cuda.use_cuda  --logging.debug --no_prompt
 ```  
 ## Performance
-```  
+
 'cubit-fast' is 8x faster than original cubit (https://github.com/opentensor/cubit.git)
-```  
+
 ## Unit Testing 
 Testing uses unittest as there is an issue with pytest and Cython compatability
 
